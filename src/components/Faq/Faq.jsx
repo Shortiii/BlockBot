@@ -1,10 +1,10 @@
-import './faq.css'
+import './Faq.css'
 import arrow from '../../assets/downArrow.png'
 
 const Faq = () => {
-  
   return (
-    <div className='faq'>
+    <div>
+          <div className='faq'>
     <div className="faq-item">
       <div className="faq-header">
       <div className="faq-info">
@@ -160,7 +160,12 @@ const Faq = () => {
     </div>
     <div className="free"></div>
     </div>
+    </div>
   )
 }
 
 export default Faq
+
+
+
+
