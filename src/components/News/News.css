@@ -1,0 +1,98 @@
+:root {
+    --main-font: "Tactisans-Thn", "Anton", sans-serif;
+  }
+  @font-face {
+    font-family: "Tactisans-Thn";
+    src: url(/font/TacticSansExtExd-Reg.otf);
+  }
+.news{
+    background-color: #b4ffca;
+    padding-block: 15rem 10rem;
+}
+.new-center{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    padding-inline: 1rem;
+    padding-block: 2rem 30rem;
+    position: relative;
+}
+.new-center h1{
+font-weight: 700;
+font-size: 48px;
+}
+.new-blog{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 12px;
+}
+.blog{
+    border: 1px solid black;
+    color: black;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 16px 4px;
+    transition:  0.9s ease-in-out;
+    width: 420px;
+}
+.blog:hover{
+    background-color: black;
+    color: #b4ffca;
+}
+.blog h2{
+    padding-block: 4rem 1rem;
+    font-size: 40px;
+    padding-left: 1rem;
+}
+.blog p{
+    font-size: 16px;
+    width: 80%;
+    padding-left: 1rem;
+}
+.blog-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    
+}
+.blog-img img{
+    width: 95%;
+    border: none;
+    /* transition:  0.1s ease-in-out; */
+}
+.blog:hover .blog-img img{
+    border: 1px solid #b4ffca;
+    border-radius: 10%;
+}
+.more{
+   max-height: 0;
+   overflow: hidden;
+    transition: max-height 0.9s ease-in-out;
+    padding-left: 16px;
+}
+.blog:hover .more{
+    max-height: 200px;
+}
+.blog h3{
+    font-size: 32px;
+    padding-block: 1.5rem;
+}
+.faq-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.move{
+    position: absolute;
+    right: 300px;
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 1rem;
+    background-color: #b4ffca;
+}

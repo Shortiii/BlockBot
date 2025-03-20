@@ -1,0 +1,46 @@
+:root {
+  --main-font: "Tactisans-Reg", "Anton", sans-serif;
+}
+@font-face {
+  font-family: "Tactisans-Reg";
+  src: url(/font/TacticSansExd-Blk.otf);
+}
+.nads {
+  background-color: #b4ffca;
+  color: black;
+  height: 120vh;
+  width: 100vw;
+  padding: 15rem 2rem 0rem;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  gap: 2.5em;
+}
+.nads h1 {
+  font-family: "Tactisans-Reg", sans-serif;
+  font-size: 55px;
+  padding-bottom: 0.5rem;
+}
+.nads p {
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+.nads-text {
+  padding-top: 5rem;
+  width: 60%;
+}
+.text-break {
+  padding-top: 16px;
+}
+.text-break a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.nads-img{
+  display: flex;
+}
+.nads-img img{
+  width: 100%;
+}

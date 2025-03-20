@@ -1,0 +1,38 @@
+:root {
+    --main-font: "TTFirsNeue-Thin", "Anton", sans-serif;
+  }
+  /* url(../../../font/TTFirsNeue-Regular.ttf) */
+  @font-face {
+    font-family: "TTFirsNeue-Thin";
+    src: url(/font/TTFirsNeue-Thin.ttf);
+  }
+.footer{
+    background-color: black;
+    color: #b4ffca;
+    font-family: "TTFirsNeue-Thin", sans-serif;
+}
+.footer-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 2rem 4rem;
+}
+.footer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.25rem;
+    font-size: 24px;
+    /* font-weight: 200; */
+}
+.lab{
+    padding-top: 7rem;
+}
+.footer-img{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+.foot-img img{
+    width: 65%;
+}

@@ -1,0 +1,86 @@
+:root {
+  --main-font: "Tactisans-Reg", "Anton", sans-serif;
+}
+@font-face {
+  font-family: "Tactisans-Reg";
+  src: url(/font/TacticSansExd-Blk.otf);
+}
+.trading {
+  background-color: #000000;
+  color: #b4ffca;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100%;
+  gap: 128px;
+  padding-top: 48px;
+}
+.trade-text {
+  text-align: center;
+}
+.trade-text h1 {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "Tactisans-Reg", sans-serif;
+  padding-bottom: 8px;
+}
+.trade-text p {
+  font-size: 24px;
+  width: 869px;
+  margin: 0 auto;
+}
+.trade-group {
+  padding: 0 16px 450px;
+}
+.group {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding-top: 18px;
+  cursor: pointer;
+}
+
+.group h1 {
+  font-family: "Tactisans-Reg", sans-serif;
+  font-size: 58px;
+  font-weight: 400;
+}
+.click {
+  color: #2a3a2f;
+}
+.group2 {
+  justify-self: end;
+}
+.group3 {
+  justify-self: center;
+}
+.group5 {
+  justify-self: end;
+}
+@keyframes lightning {
+  0% {color:  #2a3a2f;
+    text-shadow:  0 0 5px #2a3a2f, 0 0 20px #2a3a2f; }
+  50% { color:#2a3a2f;
+    text-shadow:   0 0 10px #2a3a2f, 0 0 60px #2a3a2f; }
+  100% { color:#2a3a2f;
+    text-shadow:  0 0 5px #2a3a2f, 0 0 20px #2a3a2f; }
+}
+.lightning{
+  transition: all 0.5s ease-in-out;
+}
+.lightning:hover{
+  animation: lightning 0.1s infinite alternate;
+}
+.hover-image{
+  transition: opacity 0.3s ease-in-out;
+}
+.lightning:hover .hover-image{
+  content: url("/src/assets/thunder.png");
+}
+.group2 img{
+  transition: transform 0.3s ease-in-out;
+}
+.group2:hover img{
+  transform: translateY(-20px);
+}
+

@@ -1,0 +1,60 @@
+:root {
+  --main-font: "Tactisans-Reg", "Anton", sans-serif;
+}
+@font-face {
+  font-family: "Tactisans-Reg";
+  src: url(/font/TacticSansExd-Blk.otf);
+}
+.form {
+  background-color: black;
+  color: #b4ffca;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
+  padding: 10rem 2rem 10rem;
+}
+.form-text h1 {
+  font-family: "Tactisans-Reg", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  padding-bottom: 16px;
+  width: 80%;
+}
+.ideas {
+  width: 85%;
+  font-size: 20px;
+  font-weight: 400;
+}
+.form-text .text-break a {
+  color: #b4ffca;
+}
+.form-text button {
+  background-color: #b4ffca;
+  border: 1px solid #b4ffca;
+  color: black;
+  font-size: 32px;
+  font-family: "Tactisans-Reg", sans-serif;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+  /* justify-content: space-around; */
+  gap: 1rem;
+  outline: none;
+  width: 75%;
+  border-radius: 16px;
+  padding: 21px;
+  margin-top: 48px;
+}
+.form-text button:hover{
+  background-color: black;
+  color: #b4ffca;
+  transform: scale(1.05);
+  transition: 0.2s ease-in-out;
+}
+.ptag{
+  display: inline-block;
+}
+/* .form-img {
+  padding-top: 10rem;
+} */

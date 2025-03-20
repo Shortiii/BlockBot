@@ -1,0 +1,183 @@
+:root {
+  --main-font: "Tactisans-Reg", "Anton", sans-serif;
+}
+@font-face {
+  font-family: "Tactisans-Reg";
+  src: url(/font/TacticSansExd-Blk.otf);
+}
+.header {
+  background-color: #b4ffca;
+  width: 100vw;
+  height: 100%;
+  padding-bottom: 50px;
+}
+.logo {
+  padding-block: 20px 50px;
+}
+.logo img {
+  overflow: hidden;
+}
+.logo1 {
+  padding-left: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.logo2 {
+  width: 99%;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 55% 20% 25%; 
+  gap: none;
+  /* align-items: center; */
+  /* gap: none; */
+  /* justify-content: space-between; */
+}
+.first-main{
+  /* display: flex; */
+  /* position: relative; */
+  padding-left: 20px;
+}
+.vector{
+  display: inline-block;
+  width: 670px;
+  height: 500px;
+  background-image: url("../../assets/Vector.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  /* top: -40px; */
+}
+.img{
+  position: absolute;
+  top: 20px;
+}
+.main-info{
+  color: #b4ffca;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  position: absolute;
+  top: 40px;
+  left: 150px;
+}
+.main-info h4 {
+  font-size: 28px;
+  font-weight: 300;
+}
+.images{
+  position: absolute;
+  width: 45%;
+}
+.image6{
+  bottom: 30px;
+  left: 30px;
+}
+.image7{
+  bottom: 30px;
+  right: 30px;
+}
+.stars{
+  width: 7%;
+  position: absolute;
+}
+.star1{
+  bottom: 65px;
+  left: 30px;
+}
+.star2{
+  bottom: 70px;
+  right: 230px;
+}
+.image5{
+  width: 25%;
+  bottom: 65px;
+  right: 100px;
+}
+.image4{
+  width: 38%;
+  bottom: 64px;
+  left: 200px;
+}
+.image3{
+  width: 38%;
+  bottom: 95px;
+  left: 160px;
+}
+.image2{
+  width: 28%;
+  bottom: 62px;
+}
+.image1{
+  width: 32%;
+  bottom: 165px;
+  left: 60px;
+}
+.second-main {
+  padding-left: 30px;
+  width: 450px;
+  margin-top: 260px;
+}
+.second-main h1 {
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 16px;
+}
+.second-main h1 span {
+  font-weight: 300;
+}
+.second-main a {
+  color: black;
+  font-weight: 600;
+  padding-top: 5px;
+}
+.button {
+  outline: none;
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: black;
+  color: #3CFE92;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 10px;
+  margin-top: 24px;
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
+}
+.button:hover{
+  background-color: #b4ffca;
+  color: black;
+  transform: scale(1.05);
+}
+.button h1 {
+  font-family: "Tactisans-Reg", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 0;
+  /* color: #3CFE92; */
+}
+.button img{
+  height: 16px;
+  width: 16px;
+  object-fit: contain;
+  transition: 0.2s ease-in-out;
+}
+/* .button:hover img{
+ opacity: 0;
+} */
+@media screen and (min-width: 1560px) {
+  .main {
+    /* justify-content: center; */
+    margin-left: 10rem;
+  }
+}
+/* @media screen and (min-width:1011px) {
+    .toggle-btn, .mobile-menu{
+        display: none; 
+    }
+} */
