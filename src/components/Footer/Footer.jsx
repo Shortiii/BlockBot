@@ -22,7 +22,9 @@ const Footer = () => {
             <img src={footer} alt=""   />
         </div>
       </div>
+      <div className="illust">
       <img src={illustration} alt="" />
+      </div>
     </div>
   )
 }

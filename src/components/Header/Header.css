@@ -27,16 +27,12 @@
 }
 
 .main {
-  display: grid;
-  grid-template-columns: 55% 20% 25%; 
-  gap: none;
-  /* align-items: center; */
-  /* gap: none; */
-  /* justify-content: space-between; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
 }
 .first-main{
-  /* display: flex; */
-  /* position: relative; */
   padding-left: 20px;
 }
 .vector{
@@ -48,7 +44,6 @@
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
-  /* top: -40px; */
 }
 .img{
   position: absolute;
@@ -116,13 +111,16 @@
   bottom: 165px;
   left: 60px;
 }
+.next-main{
+  display: flex;
+}
 .second-main {
   padding-left: 30px;
   width: 450px;
-  margin-top: 260px;
+  margin-top: 200px;
 }
 .second-main h1 {
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 600;
   padding-bottom: 16px;
 }
@@ -159,7 +157,6 @@
   font-weight: 400;
   font-size: 18px;
   padding: 0;
-  /* color: #3CFE92; */
 }
 .button img{
   height: 16px;
@@ -167,17 +164,247 @@
   object-fit: contain;
   transition: 0.2s ease-in-out;
 }
+.third-main img{
+  width: 100%;
+}
 /* .button:hover img{
  opacity: 0;
 } */
-@media screen and (min-width: 1560px) {
-  .main {
-    /* justify-content: center; */
-    margin-left: 10rem;
+ @media screen and (min-width: 1470px) {
+  .first-main{
+    padding-left: 12%;
+  }
+  .next-main{
+    align-items: center;
+    justify-content: space-between;
+    gap: 8rem;
+  }
+  .second-main{
+    width: 100%;
+    margin-block: auto;
+  }
+  .second-main h1{
+    font-size: 28px;
+  }
+  .second-main p, .second-main a{
+    font-size: 20px;
+  }
+ }
+@media screen and (min-width: 1990px) {
+  .next-main{
+    gap: 15rem;
+  }
+  .second-main h1{
+    font-size: 38px;
+  }
+  .second-main p, .second-main a{
+    font-size: 24px;
+  }
+  .button{
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+  .button img{
+    width: 24px;
+    height: 24px;
   }
 }
-/* @media screen and (min-width:1011px) {
-    .toggle-btn, .mobile-menu{
-        display: none; 
-    }
-} */
+@media screen and (min-width: 2650px) {
+  .next-main{
+    gap: 25rem;
+  }
+
+}
+@media screen and (max-width: 1024px) {
+  .main{
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .next-main{
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .second-main {
+    margin-top: 0px;
+    padding-left: 12%;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 690px) {
+  .vector{
+    width: 500px;
+    height: 330px;
+  }
+  .img{
+    top: 0;
+    width: 70px;
+    height: 70px;
+  }
+  .main-info{
+    top: 20px;
+    left: 100px;
+  }
+  .main-info h4{
+    font-size: 20px;
+  }
+  .main-info img{
+    width: 45px;
+    height: 45px;
+  }
+  .images{
+    width: 42%;
+  }
+  .image7, .image6  {
+    bottom: 0px;
+}
+.star1{
+  bottom: 25px;
+}
+.star2 {
+  bottom: 30px;
+  right: 170px;
+}
+.image5 {
+  width: 25%;
+  bottom: 25px;
+  right: 75px;
+}
+.image4{
+  width: 38%;
+  bottom: 24px;
+  left: 145px;
+}
+.image3 {
+  width: 38%;
+  bottom: 45px;
+  left: 100px;
+}
+.image2 {
+ width: 28%;
+ bottom: 20px;
+}
+.image1 {
+  width: 32%;
+  bottom: 100px;
+  left: 38px;
+}
+.second-main{
+  padding-left: 10%;
+}
+}
+@media screen and (max-width: 500px) {
+  .vector {
+    width: 382px;
+    height: 252px;
+}
+.img {
+  width: 49px;
+  height: 49px;
+}
+.main-info img{
+  width: 30px;
+  height: 30px;
+}
+.main-info{
+  top: 10px;
+  left: 90px;
+}
+.image4 {
+  bottom: 18px;
+  left: 105px;
+}
+.star1 {
+  bottom: 20px;
+}
+.star2 {
+  bottom: 25px;
+  right: 140px;
+}
+.image3 {
+  bottom: 35px;
+  left: 80px;
+}
+.image1 {
+  bottom: 78px;
+  left: 33px;
+}
+.second-main h1 {
+  font-size: 22px;
+  width: 100%;
+}
+.button h1{
+  font-size: 16px;
+}
+}
+@media screen and (max-width: 425px) {
+  .main {
+    gap: 2rem;
+  }
+  .img {
+    width: 40px;
+    height: 40px;
+}
+.main-info img {
+  width: 25px;
+  height: 25px;
+}
+.main-info h4 {
+  font-size: 16px;
+}
+  .vector {
+    width: 332px;
+    height: 202px;
+}
+  .second-main h1  {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+  .second-main p, .second-main a, .button h1 {
+    font-size: 14px;
+  }
+  .button {
+    padding-inline: 8px 4px;
+  }
+  .button h1{
+    font-size: 12px;
+    padding-bottom: 0;
+  }
+  .images {
+    width: 38%;
+}
+.image2 {
+  width: 25%;
+  bottom: 10px;
+}
+.image5 {
+  width: 22%;
+  bottom: 15px;
+  right: 90px;
+}
+.image4 {
+  bottom: 15px;
+  left: 85px;
+  width: 33%;
+}
+.star1 {
+  bottom: 15px;
+}
+.star2 {
+  bottom: 20px;
+  right: 140px;
+}
+.stars {
+  width: 5%;
+}
+.image3 {
+  width: 30%;
+  left: 60px;
+  bottom: 30px;
+}
+.image1 {
+  width: 30%;
+  bottom: 60px;
+  left: 23px;
+}
+}

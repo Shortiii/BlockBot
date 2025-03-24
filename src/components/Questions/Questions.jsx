@@ -5,7 +5,7 @@ const Questions = () => {
   return (
     <div>
       <div>
-                <div className='faq'>
+          <div className='faq'>
           <div className="faq-item">
             <div className="faq-header">
             <div className="faq-info">
@@ -75,7 +75,7 @@ const Questions = () => {
           <div className="faq-item">
             <div className="faq-header">
             <div className="faq-info">
-            <span className="number">4</span>
+            <span className="number num3">4</span>
             <span className="title">What is BlockBot?</span>
             </div>
               <span className="toggle">
@@ -97,7 +97,7 @@ const Questions = () => {
           <div className="faq-item">
             <div className="faq-header">
            <div className="faq-info">
-           <span className="number num2">5</span>
+           <span className="number num2 numb">5</span>
            <span className="title">What is BlockBot?</span>
            </div>
               <span className="toggle">
@@ -141,7 +141,7 @@ const Questions = () => {
           <div className="faq-item">
             <div className="faq-header">
             <div className="faq-info">
-            <span className="number num2">7</span>
+            <span className="number num2 numb">7</span>
             <span className="title">What is BlockBot?</span>
             </div>
               <span className="toggle">

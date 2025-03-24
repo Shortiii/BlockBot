@@ -64,34 +64,7 @@ const Header = () => {
           <img src={Image1} alt="" className=" images image1" />
         </div>
         </div>
-        {/* <div className="first-main main-img">
-        <img src={Avatar} alt="" className="logo-img" />
-          <div className="main-image">
-          <div className="main-info ">
-            <h4>Join us</h4>
-            <a href="#" target="blank">
-              <img src={TelegramIcon} alt="Telegram Icon" />
-            </a>
-            <a href="https://x.com/The_BlockBot" target="blank">
-              <img src={TwitterIcon} alt="Twitter Icon" />
-            </a>
-          </div>
-         <div>
-         <img src={Image6} alt="" className=" images image6" />
-          <img src={Image7} alt="" className=" images image7" />
-          <img src={Image5} alt="" className=" images image5" />
-          <img src={Image4} alt="" className=" images image4" />
-          <img src={Image3} alt="" className=" images image3" />
-          <img src={Image2} alt="" className=" images image2" />
-          <img src={Image1} alt="" className=" images image1" />
-         </div>
-          </div> */}
-          {/* <img src={Vector} alt="" className="main-image" /> */}
-          
-     
-          {/* <img src={Star1} alt="" className="images star1" />
-          <img src={Star2} alt="" className="images star2" /> */}
-        {/* </div> */}
+        <div className="next-main">
         <div className="second-main">
           <h1>
             Your Trusted Trading <br/> Buddy <span>on Monad</span>
@@ -110,6 +83,8 @@ const Header = () => {
         <div className="third-main main-img">
           <img src={Popup} alt="" />
         </div>
+        </div>
+       
       </div>
     </div>
   );

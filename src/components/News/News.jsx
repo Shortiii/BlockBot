@@ -19,7 +19,7 @@ const News = () => {
                 <h3>READ NOW. READ NOW</h3>
                 </div>
             </div>
-            <div className="blog">
+            <div className="blog blog-more">
                 <h2>Social Layers</h2>
                 <p>Building alongside our community helps shape our product in ways that ensure.</p>
                 <div className="blog-img">
@@ -28,9 +28,9 @@ const News = () => {
                 <div className="more">
                 <h3>READ NOW. READ NOW</h3>
                 </div>
-            </div>
-            <div className="move">
+                <div className="move">
               <img src={arrow}alt="" />
+            </div>
             </div>
         </div>
       </div>

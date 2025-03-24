@@ -79,6 +79,56 @@
   }
   .free{
     height: 90vh;
-    background-color: #b4ffca;
-    
+    background-color: #b4ffca; 
+  }
+  @media screen and (max-width: 996px) {
+    .number {
+      font-size: 3rem;
+  }
+  .title {
+    font-size: 2rem;
+    padding: 0.75rem;
+}
+.num {
+  padding: 1.35rem;
+}
+.num2 {
+  padding: 1.5rem;
+}
+.num3{
+  padding: 1.3rem;
+}
+.numb{
+  padding: 1.4rem;
+}
+  }
+  @media screen and (max-width: 666px) {
+    .number {
+      font-size: 1.25rem;
+      /* padding: 1rem; */
+  }
+  .title {
+    font-size: 1rem;
+    padding: 0.75rem;
+}
+.num1 {
+  padding: 1.4rem;
+}
+.num3 {
+  padding: 1.33rem;
+}
+.numb {
+  padding: 1.375rem;
+}
+  }
+  @media screen and (max-width: 425px) {
+    .title {
+      padding: 0px;
+  }
+  .toggle{
+    padding: 0px;
+  }
+  .toggle img {
+    width: 35%;
+}
   }

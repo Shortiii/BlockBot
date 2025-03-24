@@ -16,7 +16,7 @@
     width: 100%;
     padding-inline: 1rem;
     padding-block: 2rem 30rem;
-    position: relative;
+    /* position: relative; */
 }
 .new-center h1{
 font-weight: 700;
@@ -88,11 +88,105 @@ font-size: 48px;
     align-items: center;
     justify-content: center;
 }
+.faq-icon img{
+    width: 70%;
+}
+.blog-more{
+    position: relative;
+}
 .move{
     position: absolute;
-    right: 300px;
+    right: -30px;
     border: 1px solid black;
     border-radius: 16px;
     padding: 1rem;
     background-color: #b4ffca;
+}
+@media screen and (min-width: 1650px) {
+    .new-center {
+        padding-left: 5rem;
+    }
+    .new-center h1 {
+        font-size: 64px;
+    }
+    .blog {
+        width: 560px;
+    }
+    .blog h2 {
+        font-size: 52px;
+        padding-left: 2rem;
+    }
+    .blog p {
+        font-size: 24px;
+        padding-left: 2rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .news {
+        padding-block: 10rem 8rem;
+    }
+    .new-blog{
+        overflow: hidden;
+    }
+    .new-center{
+        padding-bottom: 8rem;
+    }
+    .new-center h1 {
+        font-size: 36px;
+    }
+    .blog h2{
+        font-size: 32px;
+    }
+    .blog h3 {
+        font-size: 24px;
+    }
+    .move{
+        width: 20%;
+        right: -30px;
+    }
+    .move img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 546px) {
+    .news {
+        padding-block: 7rem 4rem;
+    }
+    .new-center{
+        padding-bottom: 5rem;
+    }
+    .new-center h1{
+        font-size: 30px;
+    }
+    .blog h2{
+        font-size: 24px;
+        padding-block: 2rem 0.5rem;
+        padding-left: 0.5rem;
+    }
+    .blog p {
+        padding-left: 0.5rem;
+        font-size: 12px;
+    }
+    .blog-img{
+        padding-top: 1rem;
+    }
+    .blog h3 {
+        font-size: 20px;
+        padding-block: 0.75rem;
+    }
+    .move{
+        right: -15px !important;
+        width: 30%;
+    }
+}
+@media screen and (max-width: 388px) {
+    .new-center h1{
+        font-size: 24px;
+    }
+    .blog h2 {
+        font-size: 18px;
+    }
+    .blog p{
+        font-size: 10px;
+    }
 }
