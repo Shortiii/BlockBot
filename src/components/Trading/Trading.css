@@ -31,7 +31,7 @@
   margin: 0 auto;
 }
 .trade-group {
-  padding: 0 16px 450px;
+  padding: 0 16px 250px;
 }
 .group {
   display: flex;
@@ -78,11 +78,15 @@
 .lightning:hover .hover-image{
   content: url("/src/assets/thunder.png");
 }
-.group2 img{
+.icon img, .icon h1{
   transition: transform 0.3s ease-in-out;
 }
-.group2:hover img{
-  transform: translateY(-20px);
+.icon:hover img{
+  transform: translateY(-25px);
+  color: #2a3a2f;
+}
+.icon:hover h1{
+  color: #2a3a2f;
 }
 @media screen and (min-width: 1560px) {
   .trade-text h1{
@@ -138,7 +142,7 @@
     font-size: 16px;
   }
   .trade-group{
-    padding-bottom: 300px;
+    padding-bottom: 200px;
   }
 
 }
@@ -174,7 +178,7 @@
     font-size: 24px;
   }
   .trade-group{
-    padding-bottom: 250px;
+    padding-bottom: 150px;
   }
 }
 @media screen and (max-width: 375px) {

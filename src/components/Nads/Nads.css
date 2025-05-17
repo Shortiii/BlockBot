@@ -23,12 +23,12 @@
 }
 .nads p {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 300;
   
 }
 .nads-text {
   padding-top: 5rem;
-  width: 60%;
+  width: 50%;
 }
 .text-break {
   padding-top: 16px;
@@ -65,7 +65,7 @@
 }
 @media screen and (max-width: 1356px) {
   .nads h1{
-    font-size: 42px;
+    font-size: 50px;
   }
 }
 @media screen and (max-width: 996px) {
