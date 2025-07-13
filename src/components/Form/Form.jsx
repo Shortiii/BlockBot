@@ -1,10 +1,45 @@
 import "./Form.css";
-import { useState } from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useState, useEffect } from "react";
 import Pen from "../../assets/Pen.png";
 import Pen1 from '../../assets/pen2.png'
 import Blackbot from "../../assets/BlockBot Icon.png";
 
 const Form = () => {
+  const controls = useAnimation();
+  const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [inView, controls]);
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 2.5,
+        when: "beforeChildren",
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const dropIn = {
+    hidden: { opacity: 0, y: -25 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 2.5,
+        ease: "easeOut",
+      },
+    },
+  };
+
      // State to manage the current image source
      const [imgSrc, setImgSrc] = useState(Pen); // Default image
   
@@ -18,8 +53,14 @@ const Form = () => {
        setImgSrc(Pen); // Change back to the first image
      };
   return (
-    <div className="form">
-      <div className="form-text">
+      <div className="form-container">
+        <motion.div
+        className="form"
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={containerVariants}>
+          <motion.div className="form-text" variants={dropIn} >
         <h1>WE LISTEN TO YOUR IDEAS</h1>
         <p className="ideas">
           Building alongside our community helps shape our product in ways that
@@ -36,11 +77,12 @@ const Form = () => {
           <p className="ptag">FILL FORM</p>
           <img src={imgSrc} alt="" />
         </button>
-      </div>
-      <div className="form-img">
+      </motion.div>
+      <motion.div className="form-img" variants={dropIn}>
         <img src={Blackbot} alt="" />
+      </motion.div>
+    </motion.div>
       </div>
-    </div>
   );
 };
 

@@ -5,6 +5,9 @@
   font-family: "Tactisans-Reg";
   src: url(/font/TacticSansExd-Blk.otf);
 }
+.form-container{
+  background-color: black;
+}
 .form {
   background-color: black;
   color: #b4ffca;
@@ -38,19 +41,19 @@
   display: flex;
  justify-content: center;
  align-items: center;
-  /* justify-content: space-around; */
   gap: 1rem;
   outline: none;
   width: 75%;
   border-radius: 16px;
   padding: 21px;
   margin-top: 48px;
+  transition: all 0.6s ease-in-out;
 }
 .form-text button:hover{
   background-color: black;
   color: #b4ffca;
   transform: scale(1.05);
-  transition: 0.2s ease-in-out;
+ /* transition: all 0.6s ease-in-out; */
 }
 .ptag{
   display: inline-block;

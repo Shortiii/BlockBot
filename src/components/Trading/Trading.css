@@ -15,8 +15,15 @@
   gap: 128px;
   padding-top: 48px;
 }
+ .trade-img img{
+    width: 100%;
+  }
+  .trade-image img{
+    width: 100%;
+  }
 .trade-text {
   text-align: center;
+  padding-bottom: 128px;
 }
 .trade-text h1 {
   font-size: 48px;
@@ -73,13 +80,13 @@
   animation: lightning 0.1s infinite alternate;
 }
 .hover-image{
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
 }
 .lightning:hover .hover-image{
   content: url("/src/assets/thunder.png");
 }
 .icon img, .icon h1{
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.6s ease-in-out;
 }
 .icon:hover img{
   transform: translateY(-25px);
@@ -147,12 +154,6 @@
 
 }
 @media screen and (max-width: 668px) {
-  .trade-img img{
-    width: 100%;
-  }
-  .trade-image img{
-    width: 100%;
-  }
    .trade-text h1{
     font-size: 30px;
   }
@@ -189,6 +190,6 @@
     gap: 8px;
   }
     .group h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
