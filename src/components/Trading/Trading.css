@@ -182,7 +182,7 @@
     padding-bottom: 150px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .trade-text h1{
     font-size: 18px;
   }
@@ -190,6 +190,10 @@
     gap: 8px;
   }
     .group h1 {
-    font-size: 18px;
+    font-size: 16px;
   }
+  .icon img, .lightning img{
+  width: 20px;
+  height: 20px;
+}
 }

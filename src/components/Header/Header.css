@@ -447,3 +447,34 @@
   left: 23px;
 }
 }
+
+@media screen and (max-width: 376px) {
+.image6{
+  left: 40px;
+}
+.star2{
+  right: 120px;
+}
+.image5{
+  right: 68px;
+}
+.image4{
+  left: 105px;
+  bottom: 15px;
+}
+.image3{
+  left: 88px;
+  bottom: 30px;
+}
+.image2{
+  left: 25px;
+  bottom: 13px;
+}
+.image1{
+  left: 45px;
+  bottom: 60px;
+}
+.star1{
+  left:48px
+}
+}
