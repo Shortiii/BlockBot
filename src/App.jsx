@@ -2,7 +2,7 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Form from "./components/Form/Form";
 import Header from "./components/Header/Header";
-import Nads from "./components/Nads/Nads";
+// import Nads from "./components/Nads/Nads";
 import News from "./components/News/News";
 import Questions from "./components/Questions/Questions";
 import Trading from "./components/Trading/Trading";
@@ -13,7 +13,7 @@ function App() {
     <div className="app">
       <Header></Header>
       <Trading></Trading>
-      <Nads></Nads>
+      {/* <Nads></Nads> */}
       <Form></Form>
       <News></News>
       <Questions></Questions>

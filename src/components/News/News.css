@@ -7,7 +7,7 @@
   }
 .news{
     background-color: #b4ffca;
-    padding-block: 15rem 10rem;
+    padding-block: 25rem 10rem;
 }
 .new-center{
     display: flex;
@@ -98,6 +98,7 @@ font-size: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 15rem;
 }
 .faq-icon img{
     width: 70%;

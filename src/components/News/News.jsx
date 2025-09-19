@@ -2,9 +2,9 @@ import "./News.css";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
-import Img from "../../assets/news.png";
+// import Img from "../../assets/news.png";
 import faq from "../../assets/FAQ.png"
-import arrow from '../../assets/more.png'
+// import arrow from '../../assets/more.png'
 
 const News = () => {
     const controls = useAnimation();
@@ -27,21 +27,21 @@ const News = () => {
       },
     },
   };
-  const slideInLeft = {
-  hidden: { opacity: 0, x: -50 }, // Start 50px to the left
-  visible: {
-    opacity: 1,
-    x: 0,                         // Slide to normal position
-    transition: {
-      duration: 1.5,
-      ease: "easeOut",
-    },
-  },
-};
+//   const slideInLeft = {
+//   hidden: { opacity: 0, x: -50 }, // Start 50px to the left
+//   visible: {
+//     opacity: 1,
+//     x: 0,                         // Slide to normal position
+//     transition: {
+//       duration: 1.5,
+//       ease: "easeOut",
+//     },
+//   },
+// };
 
   return (
     <div className="news">
-      <motion.div
+      {/* <motion.div
         className="new-center"
         ref={ref}
         initial="hidden"
@@ -74,10 +74,18 @@ const News = () => {
             </div>
             </div>
         </motion.div>
-      </motion.div>
-      <div className="faq-icon">
+      </motion.div> */}
+      <motion.div
+        className="new-center"
+        ref={ref}
+        initial="hidden"
+        animate={controls}
+        variants={containerVariants}
+        >
+           <div className="faq-icon">
         <img src={faq} alt="" />
       </div>
+        </motion.div>
     </div>
   )
 }

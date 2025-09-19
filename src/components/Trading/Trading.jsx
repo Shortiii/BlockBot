@@ -116,30 +116,30 @@ const itemVariants = {
           <img src={imageSources.stroke} alt="Crown Icon" />
           <h1>TRADING INSIGHTS</h1>
         </motion.div>
-        <motion.div 
+        {/* <motion.div 
          variants={itemVariants}
           onMouseEnter={() => handleMouseEnter("crown")}
           onMouseLeave={() => handleMouseLeave("crown")}
         className="group group3 icon">
           <img src={imageSources.crown} alt="Crown Icon" />
           <h1>THE SOCIAL LAYER</h1>
-        </motion.div>
-        <motion.div 
+        </motion.div> */}
+        {/* <motion.div 
          variants={itemVariants}
           onMouseEnter={() => handleMouseEnter("diamond")}
           onMouseLeave={() => handleMouseLeave("diamond")}
         className="group icon">
            <img src={imageSources.diamond} alt="Diamond Icon" />
           <h1>USER-SPECIFIC TRADING DATA</h1>
-        </motion.div>
-        <motion.div
+        </motion.div> */}
+        {/* <motion.div
          variants={itemVariants} 
           onMouseEnter={() => handleMouseEnter("profile")}
           onMouseLeave={() => handleMouseLeave("profile")}
         className="group group5 icon">
           <img src={imageSources.profile} alt="Profile Icon" />
           <h1>USER PROFILES</h1>
-        </motion.div>
+        </motion.div> */}
         <motion.div
          variants={itemVariants} 
         className="group icon click">
