@@ -151,6 +151,9 @@
 .next-main{
   display: flex;
 }
+.trade-link{
+  text-decoration: none;
+}
 .second-main {
   padding-left: 30px;
   width: 450px;

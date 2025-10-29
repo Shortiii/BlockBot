@@ -18,8 +18,8 @@ const Footer = () => {
             <h3>DOCUMENTATION</h3>
             <h3>MEDIA KIT</h3>
             <div className="footer-img">
-                <img src={telegram} alt="" />
-                <img src={twitter} alt="" />
+              <a href="https://t.me/Monad_BlockBot" target="blank"><img src={telegram} alt="" /></a>
+              <a href="https://x.com/The_BlockBot" target="blank"><img src={twitter} alt="" /></a>
             </div>
             <h3 className='lab'>BLOCKLAB 2024</h3>
         </div>

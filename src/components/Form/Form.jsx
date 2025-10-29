@@ -8,7 +8,7 @@ import Blackbot from "../../assets/BlockBot Icon.png";
 
 const Form = () => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
+  const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true });
 
   useEffect(() => {
     if (inView) {
@@ -68,8 +68,9 @@ const Form = () => {
         </p>
         <p className="text-break ideas">
           If you have a suggestion for a new feature on the bot, please fill the
-          form <a href="#">below.</a>
+          form <a href="https://forms.gle/xdvKPsdMLPTAfu2B7" target="blank">below.</a>
         </p>
+        <a href="https://forms.gle/xdvKPsdMLPTAfu2B7" target="blank" className="trade-link">
         <button
                   onMouseEnter={hdleMouseEnter}
                   onMouseLeave={hdleMouseLeave}
@@ -77,6 +78,7 @@ const Form = () => {
           <p className="ptag">FILL FORM</p>
           <img src={imgSrc} alt="" />
         </button>
+        </a>
       </motion.div>
       <motion.div className="form-img" variants={dropIn}>
         <img src={Blackbot} alt="" />

@@ -17,7 +17,7 @@ import question from "../../assets/question.png"
 
 const Trading = () => {
   const controls = useAnimation();
-const [ref, inView] = useInView({ threshold: 0.45, triggerOnce: true });
+const [ref, inView] = useInView({ threshold: 0.35, triggerOnce: true });
 
 useEffect(() => {
   if (inView) {

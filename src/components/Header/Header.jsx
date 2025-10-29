@@ -173,7 +173,7 @@ const Header = () => {
 
           >
             <h4>Join us</h4>
-            <a href="#" target="blank">
+            <a href="https://t.me/Monad_BlockBot" target="blank">
               <img src={TelegramIcon} alt="Telegram Icon" />
             </a>
             <a href="https://x.com/The_BlockBot" target="blank">
@@ -378,6 +378,7 @@ const Header = () => {
           <a href="https://telegram.org/" target="blank">
             Install Here <img src={TelegramArr} alt="" />
           </a>
+          <a href="https://forms.gle/xdvKPsdMLPTAfu2B7" target="blank" className="trade-link">
           <button
             className="button"
             onMouseEnter={handleMouseEnter}
@@ -386,6 +387,7 @@ const Header = () => {
             <h1 className="but">START TRADING</h1>
             <img src={imageSrc} alt="" className="arrow" />
           </button>
+          </a>
         </motion.div>
         {/* Slide in from RIGHT */}
         <motion.div

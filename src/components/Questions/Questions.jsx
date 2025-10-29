@@ -29,13 +29,13 @@ const Questions = () => {
   };
 
   const faqs = [
-    { number: '1', title: 'What is BlockBot?', text: 'Building alongside our community helps shape our product...' },
-    { number: '2', title: 'What is BlockBot?', text: 'Building alongside our community helps shape our product...' },
-    { number: '3', title: 'What is BlockBot?', text: 'Building alongside our community helps shape our product...' },
-    { number: '4', title: 'What is BlockBot?', text: 'Building alongside our community helps shape our product...' },
-    { number: '5', title: 'What is BlockBot?', text: 'Building alongside our community helps shape our product...' },
-    { number: '6', title: 'What is BlockBot?', text: 'Building alongside our community helps shape our product...' },
-    { number: '7', title: 'What is BlockBot?', text: 'Building alongside our community helps shape our product...' },
+    { number: '1', title: 'What is BlockBot?', text: 'BlockBot is a high-speed Telegram trading bot built with speed, security, and YOU in mind.' },
+    { number: '2', title: 'What are Telegram trading bots?', text: 'Telegram trading bots are tools that let you trade crypto tokens directly from your Telegram chat, using smart contracts to execute transactions.' },
+    { number: '3', title: 'How do I start trading on Telegram using BlockBot?', text: 'Getting started with BlockBot takes less than a minute, to get started click here.' },
+    { number: '4', title: 'Which chain does BlockBot support?', text: 'BlockBot is built on Monad, a next-gen Layer-1 EVM compatible blockchain focused on high throughput and low latency.' },
+    { number: '5', title: 'Do I need to install anything before using BlockBot?', text: 'No extra downloads needed. Just have Telegram installed, open the official BlockBot link to get started.' },
+    { number: '6', title: 'Is BlockBot free to use?', text: 'BlockBot is free to access and use, there are no subscription or set-up costs. A 1% trading fee applies to each buy and sell transaction, along with standard gas fees on the Monad network.' },
+    // { number: '7', title: 'What is BlockBot?', text: 'Building alongside our community helps shape our product...' },
   ];
 
   return (
@@ -55,9 +55,19 @@ const Questions = () => {
                 <div className={`faq-content ${openIndex === index ? 'open' : ''}`}>
                   <div className="faq-content-inner">
                     <p className="ideas">{faq.text}</p>
-                    <p className="text-break ideas">
-                      If you have a suggestion for a new feature on the bot, please fill the form <a href="#">below.</a>
-                    </p>
+                       {/* Only show this for number 3 */}
+                {faq.number === '3' && (
+                  <p className="text-break ideas">
+                    Learn more about getting started{" "}
+                    <a
+                      href="https://docs.blockbot.trade/getting-started/quickstart"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Here.
+                    </a>
+                  </p>
+                )}
                   </div>
                 </div>
               </div>
