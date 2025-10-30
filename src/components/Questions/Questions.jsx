@@ -24,7 +24,7 @@ const Questions = () => {
       setTimeout(() => {
         setOpenIndex(index); // Open new one
         setIsTransitioning(false);
-      }, 900); // matches your transition (900ms = 0.9s)
+      }, 700); // matches your transition (700ms = 0.7s)
     }
   };
 

@@ -6,7 +6,7 @@ import meeting from "../../assets/meeting.png"
 
 const Nads = () => {
   const controls = useAnimation();
-  const [ref, inView] = useInView({ threshold: 0.25, triggerOnce: true });
+  const [ref, inView] = useInView({ threshold: 0.2, triggerOnce: true });
 
   useEffect(() => {
     if (inView) {
@@ -19,7 +19,7 @@ const Nads = () => {
     visible: {
       opacity: 1,
       transition: {
-        duration: 2.5,
+        duration: 2.0,
         when: "beforeChildren",
         staggerChildren: 0.2,
       },

@@ -21,7 +21,7 @@ const Form = () => {
     visible: {
       opacity: 1,
       transition: {
-        duration: 2.5,
+        duration: 2.0,
         when: "beforeChildren",
         staggerChildren: 0.2,
       },
@@ -34,7 +34,7 @@ const Form = () => {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 2.5,
+        duration: 2.0,
         ease: "easeOut",
       },
     },

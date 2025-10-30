@@ -25,7 +25,7 @@
   .faq-item {
     background-color: black;
     color: #b4ffca;
-    transition: 0.6s ease-in-out;
+    transition: 0.4s ease-in-out;
     border-bottom: 1px solid black;
   }
   
@@ -52,7 +52,7 @@
     width: 70%;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.6s ease-in-out;
+    transition: max-height 0.4s ease-in-out;
   }
   .open{
   max-height: 65rem;
@@ -109,12 +109,12 @@
   .title{
     font-family: "TTFirsNeue-Bold", sans-serif;
     font-size: 3.25rem;
-    padding: 1rem 0;
+    padding: 2rem 0 1rem;
     /* font-weight: 500; */
   }
   .toggle{
     padding: 1rem;
-    transition: transform 0.6s ease-in-out;
+    transition: transform 0.4s ease-in-out;
   }
   .faq-header:hover .toggle{
     transform: translateY(20px);
@@ -127,7 +127,7 @@
   .arrow-icon {
     width: 47px;
     height: 26px;
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.4s ease-in-out;
     color: #b4ffca; /* default color */
 }
 .faq-item.active .arrow-icon {
@@ -141,7 +141,7 @@
   }
   .title {
     font-size: 2rem;
-    padding: 0.75rem;
+    /* padding: 0.75rem; */
 }
 .num {
   padding: 1.35rem;
@@ -196,7 +196,7 @@
   }
   .title {
     font-size: 1rem;
-    padding: 0.75rem;
+    /* padding: 0.75rem; */
 }
   .arrow-icon {
     width: 27px;
@@ -219,9 +219,9 @@
   }
   }
   @media screen and (max-width: 425px) {
-    .title {
+    /* .title {
       padding: 0px;
-  }
+  } */
   .toggle{
     padding: 0px;
   }

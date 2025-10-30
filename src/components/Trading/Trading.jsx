@@ -17,7 +17,7 @@ import question from "../../assets/question.png"
 
 const Trading = () => {
   const controls = useAnimation();
-const [ref, inView] = useInView({ threshold: 0.35, triggerOnce: true });
+const [ref, inView] = useInView({ threshold: 0.3, triggerOnce: true });
 
 useEffect(() => {
   if (inView) {
@@ -91,7 +91,7 @@ const itemVariants = {
   transition: {
     duration: 1.5,
     ease: "easeOut",
-    staggerChildren: 0.25,  // 👈 Add this to stagger
+    staggerChildren: 0.2,  // 👈 Add this to stagger
   },
 }
       }}

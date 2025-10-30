@@ -29,11 +29,11 @@ const Header = () => {
     const controlsVector = useAnimation();
     const controlsImages = useAnimation();
 
-    const [refMain, inViewMain] = useInView({ threshold: 0.45, // Trigger when 45% of it is in view
+    const [refMain, inViewMain] = useInView({ threshold: 0.4, // Trigger when 40% of it is in view
       triggerOnce: true });
-    const [refImages, inViewImages] = useInView({ threshold: 0.55, // Trigger when 50% of it is in view
+    const [refImages, inViewImages] = useInView({ threshold: 0.5, // Trigger when 50% of it is in view
       triggerOnce: true });
-    const [refVector, inViewVector] = useInView({ threshold: 0.75, // Trigger when 75% of it is in view
+    const [refVector, inViewVector] = useInView({ threshold: 0.7, // Trigger when 70% of it is in view
       triggerOnce: true });
 
     useEffect(() => {
